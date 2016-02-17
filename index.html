@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="assets/css/materialize.min.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css"/>
     <title>PHP and jQuery Test</title>
   </head>
   <body>
@@ -18,17 +19,26 @@
       </nav>
     </header>
     <section class="container">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="city" type="text">
-            <label for="city">Search your city</label>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="city" name="city" type="text">
+              <label for="city">Search your city</label>
+            </div>
           </div>
+        </form>
+      </div>
+      <div id="progress" class="row hide">
+        <h2 class="center-align">Loading</h2>
+        <div class="progress">
+          <div class="indeterminate"></div>
         </div>
-      </form>
+      </div>
     </section>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
